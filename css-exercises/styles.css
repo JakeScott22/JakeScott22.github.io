@@ -1,0 +1,22 @@
+p {
+  color:red;
+  }
+  
+  h1 {
+    color: blue;
+    font-family: verdana;
+  }
+
+  p {
+    color: red;
+  }
+
+  #id1 {
+    color: blue;
+    font-family: verdana;
+  }
+  
+    .bluev {
+    color: blue;
+    font-family: verdana;
+    }
