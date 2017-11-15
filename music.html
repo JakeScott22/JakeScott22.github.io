@@ -9,21 +9,53 @@
 <body>
 
 <div class="header">
-  <h1>History of Music</h1>
-  <p>Resize the browser window to see the responsive effect.</p>
+  <h1>Music</h1>
+  
 </div>
 
 <div class="topnav">
   <a id="activepage" href="index.html">Home</a>
-  <a href="page1.html">Page 1</a>
-  <a href="page2.html">Page 2</a>
-  <a href="page3.html">Page 3</a>
+  <a href="page1.html">Rap </a>
+  <a href="page2.html">Rock </a>
+  <a href="page3.html">Jazz</a>
+  <a href="page4.html">Alternative</a>
 </div>
 
 <div class="row">
   <div class="column side">
-    <h2>Side</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+    <h2>Music suggestions</h2>
+    <table style="width:100%">
+  <tr>
+    <th>Band/singer</th>
+    <th>Best song</th> 
+    <th>Genre</th>
+  </tr>
+  <tr>
+    <td>Fall Out Boy</td>
+    <td>Thnks fr th mmrs</td>
+    <td>Alternative</td>
+  </tr>
+  <tr>
+    <td>Duke Ellington</td>
+    <td>Take the 'A' Train</td>
+    <td>Jazz</td>
+  </tr>
+  <tr>
+    <td>From Ashes to New</td>
+    <td>Through It All</td>
+    <td>Rock</td>
+  </tr>
+  <tr>
+    <td>Eminem</td>
+    <td>Survival</td>
+    <td>Rap/Hip-hop</td>
+  </tr>
+    
+    
+  
+  
+</table>
+
   </div>
   <div class="column middle">
     <h2>What is music?</h2>
@@ -31,21 +63,120 @@
     <p>To me music is a extremely powerful thing, I use it to escape reality and think about my past, present and future. Music has helped me bond with friends over the years, and is a very powerful thing in my life, whether it's rock or jazz or hip-hop.</p>
   </div>
   <div class="column side">
-    <h2>Side</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+    <h2>Video</h2>
+    <iframe width="420" height="345" src="https://www.youtube.com/watch?v=ivXgmwNismk">
+</iframe>
+
+  <p>This video talk about what music truly is and why it should be important to us, Courtesy of Eckhart Tolle.</p>
+<p><a href="https://www.youtube.com/watch?v=ivXgmwNismk">Link to the video</a></p>
   </div>
 </div>
 
+
+
 <div class="footer">
-  <p>Footer</p>
+  <p><a href="page1.html">Page 1</a></p>
 </div>
-  <p>
-A video explaining why music is so important to us, courtesy of creator Eckhart Tolle, who talks about
-<a href="https://www.youtube.com/watch?v=ivXgmwNismk" target="_blank">What is music</a>.
-</p>
   
 </body>
 </html>
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover:not(.active) {
+    background-color: #ddd;
+    color: black;
+}
+
+/* indicate active page on nav */
+#activepage {
+    background-color: #4CAF50;
+}
+
+/* A - Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+  border-style:dashed;
+  border-color:blue;
+  border-width:1px;
+  float: right;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+img {
+    float: right;
+}
+img {
+    float: left;
+}
 
 
+ 
